@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(curl:*)",
+      "Bash(SESSION_ID='eyJyb3VuZHMiOnsiNjNlZDAwMjMtYjRiZi00MmJhLWExZmYtOWNmZTQyNDdhYWIwIjoicmVhbCIsImMxNTkxMjI1LWM5N2QtNGUyMy1iNWVlLWY3NzdlOTkyOTY4ZCI6InJlYWwiLCIwOTdjODE1Zi0zZDU5LTQ1NTYtOTQyYy1iNDdjNGNkZWZlNTAiOiJhaSJ9fQ==.5c29a62bfe768c71984c498aff23456f0326d4cf1f06659b2e6618359c0245e9')",
+      "Bash(IMAGE_ID='63ed0023-b4bf-42ba-a1ff-9cfe4247aab0')",
+      "Bash(pkill:*)",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nfeat: Phase 0 game API — image-only Real vs AI\n\nImplement the stateless game API for the image-only MVP:\n\n- POST /api/v1/game/start: select random image pairs, return\n  one image per round with an HMAC-signed session token \\(no\n  server-side session storage needed\\)\n- POST /api/v1/game/guess: verify token, compare guess against\n  actual label, return verdict + full reveal with both URLs\n\nStack: Python + FastAPI + SQLAlchemy + SQLite\n\nAlso includes:\n- Project documentation \\(Claude.md, PRD.md, TechSpec.md, Status.md\\)\n- Phase 0 technical spec with pipeline architecture, DB schema,\n  external service comparison, and API design\n- Claude Code settings with permissions and PostToolUse hook\n- Seed script with 20 dummy image pairs for local testing\n\nCo-Authored-By: Claude Opus 4.6 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Bash(git push:*)",
+      "Bash(gh pr create:*)",
+      "Bash(where:*)"
+    ]
+  }
+}
